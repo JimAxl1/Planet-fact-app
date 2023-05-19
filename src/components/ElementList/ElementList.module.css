@@ -1,0 +1,263 @@
+li:hover{
+    cursor: pointer;
+}
+
+.indexHeader{
+    font-family: Spartan;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    list-style-type: none;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-top: 5px solid transparent;
+}
+
+.options{
+    color: #FFFFFF;
+    font-family: Spartan;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0.26rem;
+    text-align: left;
+    list-style-type: none;
+    border: 0.1rem solid gray;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0px;
+    counter-increment: tab;
+}
+
+.options::before{
+    content: '0' counter(tab);
+    color: #838391;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+.options:nth-child(1)::after{
+    content: 'OVERVIEW';
+}
+
+.options:nth-child(2)::after{
+    content: 'INTERNAL STRUCTURE';
+}
+
+.options:nth-child(3)::after{
+    content: 'SURFACE GEOLOGY';
+}
+
+@media screen and (min-width: 1025px){
+   .options:hover{
+        background-color: #38384F;
+    } 
+}
+
+.indexHeader_Mercury{
+    border-top: 5px solid #419EEB;
+}
+
+.indexHeader_Venus{
+    border-top: 5px solid #EDA249;
+}
+
+.indexHeader_Earth{
+    border-top: 5px solid #6F2ED6;
+}
+
+.indexHeader_Mars{
+    border-top: 5px solid #D14C32;
+}
+
+.indexHeader_Jupiter{
+    border-top: 5px solid #D83A34;
+}
+
+.indexHeader_Saturn{
+    border-top: 5px solid #CD5120;
+}
+
+.indexHeader_Uranus{
+    border-top: 5px solid #1EC2A4;
+}
+
+.indexHeader_Neptune{
+    border-top: 5px solid #2D68F0;
+}
+
+.sectionSelected_Mercury{
+    background-color: #419EEB;
+}
+
+.sectionSelected_Venus{
+    background-color: #EDA249;
+}
+
+.sectionSelected_Earth{
+    background-color: #6F2ED6;
+}
+
+.sectionSelected_Mars{
+    background-color: #D14C32;
+}
+
+.sectionSelected_Jupiter{
+    background-color: #D83A34;
+}
+
+.sectionSelected_Saturn{
+    background-color: #CD5120;
+}
+
+.sectionSelected_Uranus{
+    background-color: #1EC2A4;
+}
+
+.sectionSelected_Neptune{
+    background-color: #2D68F0;
+}
+
+@media screen and (max-width: 1024px){
+    .options{
+        width: 100%;
+        font-family: Spartan;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+    }
+
+    .indexHeader{
+        border-top: none;
+        font-family: Spartan;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0.1rem;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .options{
+        border: none;
+        background-color: transparent;
+        border-bottom: 5px solid transparent;
+        text-align: center;
+        width: 10rem;
+    }
+
+    .options:hover{
+        background-color: transparent;
+    }
+
+    .options::before{
+        content: none;
+    }
+
+    .sectionSelected_Mercury{
+        border-bottom: 5px solid #419EEB;
+    }
+    
+    .sectionSelected_Venus{
+        border-bottom: 5px solid #EDA249;
+    }
+    
+    .sectionSelected_Earth{
+        border-bottom: 5px solid #6F2ED6;
+    }
+    
+    .sectionSelected_Mars{
+        border-bottom: 5px solid #D14C32;
+    }
+    
+    .sectionSelected_Jupiter{
+        border-bottom: 5px solid #D83A34;
+    }
+    
+    .sectionSelected_Saturn{
+        border-bottom: 5px solid #CD5120;
+    }
+    
+    .sectionSelected_Uranus{
+        border-bottom: 5px solid #1EC2A4;
+    }
+    
+    .sectionSelected_Neptune{
+        border-bottom: 5px solid #2D68F0;
+    }    
+
+    .options:nth-child(1)::after{
+        content: 'OVERVIEW';
+    }
+    
+    .options:nth-child(2)::after{
+        content: 'STRUCTURE';
+    }
+    
+    .options:nth-child(3)::after{
+        content: 'SURFACE';
+    }
+
+    .indexHeader{
+        border-bottom: 1px solid gray;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 5rem;
+    }
+
+    .indexHeader::before{
+        position: absolute;
+        content: '';
+        left: 5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    .indexHeader::after{
+        content: '';
+        position: absolute;
+        background: url(../../assets/icon-chevron.svg) no-repeat;
+        width: 2rem;
+        height: 2rem;
+        right: 4rem;
+    }
+
+    .Mercury::before{
+        background-color: #DEF4FC;
+    }
+
+    .Venus::before{
+        background-color: #F7CC7F;
+    }
+
+    .Earth::before{
+        background-color: #545BFE;
+    }
+
+    .Mars::before{
+        background-color: #FF6A45;
+    }
+
+    .Jupiter::before{
+        background-color: #ECAD7A;
+    }
+
+    .Saturn::before{
+        background-color: #FCCB6B;
+    }
+
+    .Uranus::before{
+        background-color: #65F0D5;
+    }
+
+    .Neptune::before{
+        background-color: #497EFA;
+    }
+}

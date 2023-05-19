@@ -1,0 +1,35 @@
+.group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0px;
+}
+
+@media screen and (max-width: 1024px){
+    .group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navBar{
+        display: none;
+    }
+
+    .group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 10rem;
+    }
+
+    .abierto{
+        display: block;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,21 @@
+.group{
+    padding-left: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .group{
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-bottom: 1px solid gray;
+    }
+}

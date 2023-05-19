@@ -1,0 +1,95 @@
+.container{
+    margin-bottom: 1.5rem;
+}
+
+.title{
+    font-family: Antonio;
+    font-size: 8.0rem;
+    font-weight: 400;
+    line-height: 10.4rem;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 2.3rem;
+}
+
+.text{
+    font-family: Spartan;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.source{
+    font-family: Spartan;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #838391;
+}
+
+.textSource{
+    font-family: Spartan;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #838391;
+    display: block;
+    position: relative;
+}
+
+.imgLink{
+    position: absolute;
+    top: 25%;
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+        margin-top: 0;
+        font-style: normal;
+        font-size: 4.8rem;
+        line-height: 6.2rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+
+    .source{
+        font-size: 1.2rem;
+    }
+
+    .textSource{
+        font-size: 1.2rem;     
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        width: 88vw;
+        align-self: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+        line-height: 5.2rem;
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .textSource{
+        text-align: center;
+    }
+}

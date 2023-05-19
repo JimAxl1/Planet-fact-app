@@ -1,0 +1,11 @@
+*{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url('./assets/background-stars.svg');
+    background-color: #070724;
+    padding-bottom: 4.0rem;
+    min-height: 100vh;
+}
